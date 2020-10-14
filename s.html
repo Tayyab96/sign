@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ss.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(".btn").click(function () {
+        ("login").show();
+      });
+    });
+    $(document).ready(function () {
+      $(".btn4").click(function () {
+        alert("Your request has been submitted" + $("#sbmit").text());
+      });
+    });
+    $(document).ready(function () {
+      $(".btn5").click(function () {
+        alert("Your login Id was created" + $("#signup").text());
+      });
+    });
+    $( function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-light bg-info">
+      <h1 class="navbar-brand mb-0 h1">Sign up form</h1>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 offset-md-4">
+        <div class="signup-form">
+          <form role="form" id="register-form" autocomplete="off">
+            <div class="form-header">
+              <h3 class="form-title"> Sign Up</h3>
+              <div class="pull-right">
+                <h3 class="form-title"><i class="fa fa-pencil"></i></h3>
+              </div>
+
+            </div>
+
+            <div class="form-body">
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" id="btnGroupAddon1"><i class="fa fa-user"></i></div>
+                </div>
+          
+                <input type="text" class="form-control" placeholder="Username" aria-label="input1"
+                  aria-describedby="btnGroupAddon1">
+              </div>
+              <br>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" id="btnGroupAddon2"><i class="fa fa-envelope"></i></div>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" aria-label="input2"
+                  aria-describedby="btnGroupAddon2">
+              </div>
+              <br>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" id="btnGroupAddon3"><span class="fa fa-lock"></span></div>
+                </div>
+                <input type="text" class="form-control" placeholder="Password" aria-label="Input3"
+                  aria-describedby="btnGroupAddon3">
+              </div>
+              <br>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text" id="btnGroupAddon4"><i class="fa fa-lock"></i></div>
+                </div>
+                <input type="text" class="form-control" placeholder="Re-type" aria-label="Input4"
+                  aria-describedby="btnGroupAddon4">
+              </div>
+             
+            </div> <br>
+            <div class="form-footer">
+              <button type="button" class="btn5 btn-info btn-sm  justify-content-center">Sign Me Up</button>
+            </div>
+        </div>
+      </div>
+      </form>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6 offset-md-4 ">
+        <button type="button" class="btn btn-primary btn-lg btn-block d-flex justify-content-center" data-toggle="modal"
+          data-target="#md1" data-whatever="@mdo"><strong>Login</strong></button>
+        <div class="modal fade" id="md1" tabindex="-1" aria-labelledby="model1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cls" font-size="25px">log in</h5>
+                <button type="btn2" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="Username" class="col-form-label">Username</label>
+                    <input type="text" class="form-control" id="Usrnme" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-form-label">password</label>
+                    <input type="text" class="form-control" id="pswrd" placeholder="Password"></textarea>
+                  </div>
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn4 btn-info btn-sm btn-block">Submit</button>
+                <button type="button" class="btn3 btn-danger btn-sm btn-block" data-dismiss="modal">Cancel</button>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
